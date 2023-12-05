@@ -1,4 +1,4 @@
-public class PCCE1 {
+public class PCCE2 {
     public static void main(String[] args) {
         String msg = "";
 
