@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PCCE3 {
+public class PCCE4 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int year = sc.nextInt();
