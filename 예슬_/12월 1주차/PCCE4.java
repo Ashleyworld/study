@@ -2,30 +2,30 @@ import java.util.Scanner;
 
 public class PCCE4 {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int year = sc.nextInt();
-        String age_type = sc.next();
-        int answer = 0;
 
-        if (age_type.equals("Korea")) {
-            answer = 2030-year+1;
+                Scanner sc = new Scanner(System.in);
+                int start = sc.nextInt();
+                int before = sc.nextInt();
+                int after = sc.nextInt();
+
+                int money = start;
+                int month = 1;
+                while (money < 70) {
+                    money += before;
+                    month++;
+                }
+                while (money  < 100) {
+                    money += after;
+                    month++;
+                }
+
+                System.out.println(month);
+            }
         }
-        else if (age_type.equals("Year")) {
-            answer = 2030-year;
-        }
-
-        System.out.println(answer);
-    }
-}
-
 
 /*
- * 어떻게 푸는지 감이 안와서 31이 나오게 만들어 보았다.
- * year 값이 2000이라서 2000-31 하면 1969으로 값이 나오길래 answer = year-1969;
- * 해보았더니 테스트 통과 되어서 아래도 +1 했더니 테스트 통과 되었다....
+ * 빈칸이 before 인 이유는 start로 이미 시작하였고
+ * 그 뒤에 두번째 달부터 시작하는 before 가 나오고
+ * 70이상 이 되면 after로 변경해서 저금한다고 하였다.
  *
- *
- *
- * 그런데 제출이 안됨
- * 그래서 방식을 바꿔서 2023-2000 했다가 2030 - 2000으로 바꿔서 풀어 봤는데 맞았다! 생각 보다 쉬운 문제;;;;
  *  */
