@@ -35,8 +35,3 @@ public class PCCE8 {
         return answer;
     }
 }
-
-/*
- * 1. 첫번째 시도 실패함,,,,
- *
- *  */
