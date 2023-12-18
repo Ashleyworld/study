@@ -1,6 +1,6 @@
 import java.util.*;
 
-class Solution {
+class PCCE10 {
     public int[][] solution(int[][] data, String ext, int val_ext, String sort_by) {
 
         List<int[]> filterData = new ArrayList<>();
@@ -34,7 +34,7 @@ class Solution {
     }
 
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        PCCE10 solution = new PCCE10();
         int[][] data = {{1, 20300104, 100, 80}, {2, 20300804, 847, 37}, {3, 20300401, 10, 8}};
         String ext = "date";
         int val_ext = 20300501;
