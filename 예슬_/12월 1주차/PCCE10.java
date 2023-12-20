@@ -13,7 +13,7 @@ class PCCE10 {
         // ext 값에 해당하는 index 추출
         int idx = map.get(ext);
 
-        // ext 값이 val_ext 보다 작은 데이터 필터링
+        // ext 값이 val_ext (20300501) 보다 작은 데이터 필터링
         for (int[] item : data) {
             if (item[idx] < val_ext) {
                 filterData.add(item);

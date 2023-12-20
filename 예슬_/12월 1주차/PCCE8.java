@@ -6,14 +6,19 @@ public class PCCE8 {
 
         for(int i=0; i<storage.length; i++){    // 정리된 창고의 물건이름 수 만큼 돌아감
             int clean_idx = -1;                 // 정리된 창고 물건의 갯수, 왜 -1 ?
-            for(int j=0; j<num_item; j++){      // 옛날 창고에 있는 각 물건 개수 만큼 돌아감
-                if(storage[i].equals(clean_storage[j])){      //정리된 창고 물건 이름이 = 물건 이름과 같아
-                    clean_idx = j;  // 정리된 숫자
+                                                // 존재하지 않는 숫자, 중복체크를 하기 위해서 -1라는 임의의 값을 둠!
+
+
+            for(int j=0; j<num_item; j++){      // 처음 0 이라서 FOR문 실행안됨.
+                                                // 옛날 창고에 있는 각 물건 개수 만큼 돌아감
+                if(storage[i].equals(clean_storage[j])){      // 정리된 창고 물건 이름이 = 물건 이름과 같아
+                    clean_idx = j;  // 정리된 숫자,
                     break;
                 }
             }
             if(clean_idx == -1){    //정리된 창고 물건 개수, -1 왜인지 아직도 모름 -> -1 과 같으면
-                clean_storage[num_item] = storage[i];     // 정리된 창고[물건갯수] = 물건을 정수로 표현함..그래서 틀림 -> 물건 이름으로 바꿈!!!
+                clean_storage[num_item] = storage[i];
+                // 정리된 창고[물건갯수] = 물건을 정수로 표현함..그래서 틀림 -> 물건 이름으로 바꿈!!!
                 clean_num[num_item] = num[i];
                 num_item += 1;
             }

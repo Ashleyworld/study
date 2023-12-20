@@ -10,7 +10,6 @@ class Solution {
         return answer;
     }
 
-    이거 못품!!!!
 
 /*
 
