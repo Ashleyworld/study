@@ -1,20 +1,24 @@
 
-function solution(num, k) {
-        const newnum = String(num)
-        let answer = 0;
+class Solution {
+    public int solution(int num, int k) {
+        int answer = -1;
 
-        answer = newnum.indexOf(String(k)) + 1
-        if (answer == 0 ) {
-        answer = answer - 1
+        String[] s = String.valueOf(num).split("");
+        for(int i=0; i<s.length; i++){
+            if(s[i].equals(String.valueOf(k))){
+                answer = i + 1;
+                break;
+            }else{
+                answer = -1;
+            }
         }
+
         return answer;
-        }
-        const res = solution(123456, 7)
-
-        console.log(res)
-
+    }
+}
 /*
-* int answer는 a의 길이, 입력된 예씨는 abcde 그래서 answer = 5
-*    i는 5만큼 돌아가고
-*   println 한다. a를 5개
+* answer 가 -1로 시작하는 이유는
+* num에서 k가 발견되지 않는 경우를 나타내기 위함이다.
+* k와 일치하는 값을 찾지 못하면 answer는 -1로 유지된다.
+*
 * */
