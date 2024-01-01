@@ -20,4 +20,5 @@ class Solution {
 * 문자열의 인덱스에 매핑하여 answer에 추가합니다.
 * ageArr의 각 요소를 가져와 Integer.valueOf()를 사용하여 정수로 변환
 *
+* charAt() 메서드
 * */
