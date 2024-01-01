@@ -65,7 +65,7 @@ public class Practice1 {
         }
 
         /*
-        * Arrays.copyOfRange 메서드는 다양한 유형의 배열에 대해 동작하며, 원본 배열과 같은 유형의 배열이 반환된다.
+ * Arrays.copyOfRange 메서드는 다양한 유형의 배열에 대해 동작하며, 원본 배열과 같은 유형의 배열이 반환된다.
 copyOfRange(T[] original, int from, int to)
 original: 복사할 배열
 from: 복사할 시작 인덱스 (포함)
@@ -79,6 +79,8 @@ dest: 복사된 요소를 저장할 대상 배열
 destPos: 대상 배열에서 복사를 시작할 인덱스
 length: 복사할 요소의 개수
         * */
+
+
 
         //외계행성의 나이
         public String solution4(int age) {
