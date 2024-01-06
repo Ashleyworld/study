@@ -32,4 +32,5 @@ class Solution {
 *
 * (new String[resultList.size()]); 의 의미를 솔직히 잘 모르겠음...
 *
+* toArray() 를 쓸 때, size()를 사용한다!!!
 * */

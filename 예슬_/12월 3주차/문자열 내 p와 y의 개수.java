@@ -19,3 +19,10 @@ class Solution {
         return true;
     }
 }
+
+
+/*
+* toLowerCase : 다 소문자로 바꿔버리는()
+* toUpperCase : 다 대문자로 바꿔버리는()
+*
+* */
