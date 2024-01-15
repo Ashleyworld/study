@@ -7,9 +7,6 @@ class Solution {
             answer++;
             dex += 1;
         }
-
-
-
         return answer;
     }
 }

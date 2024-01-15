@@ -28,4 +28,24 @@ dest: 복사된 데이터를 저장할 대상 배열입니다.
 destPos: 대상 배열에서 데이터를 저장할 위치입니다.
 length: 복사할 요소의 개수입니다.
 
+
+
+영재꺼 코드
+
+    //배열의 길이를 2의 거듭제곱으로 만들기
+    public int[] solution20(int[] arr) {
+        int pow = 0;
+        while(arr.length > Math.pow(2, pow)){
+            pow++;
+        }
+
+        int[] answer = new int[(int) Math.pow(2, pow)];
+
+        for(int i = 0; i < arr.length; i++){
+            answer[i] = arr[i];
+        }
+        return answer;
+    }
+
+}
 */

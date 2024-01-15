@@ -17,3 +17,25 @@ class Solution {
         return answer;
     }
 }
+
+
+/*
+*
+*    // 2차원으로 만들기
+
+    public int[][] solution05(int[] num_list, int n) {
+        int[][] answer = new int[num_list.length / n][n];
+        int index = 0;
+
+        for(int i = 0; i < answer.length; i++){
+            for(int j = 0; j < answer[i].length; j++){
+                answer[i][j] = num_list[index];
+                index++;
+            }
+        }
+        return answer;
+    }
+
+*
+*
+* */
