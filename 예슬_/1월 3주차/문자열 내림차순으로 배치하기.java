@@ -13,6 +13,9 @@ class Solution {
         // 배열 arr을 오름차순으로 정렬
         // 가장 작은 문자부터 큰 문자순서로 배열
 // ["Z", "b", "c", "d", "e", "f", "g"] 로 배열됨
+
+        // 대문자가 더 큰숫자, 소문자가 작은 숫자!!!
+
         for(int i=arr.length-1; i>= 0; i--){
             sb.append(arr[i]);
             // 정렬된 배열을 역순으로 순회하면서 StringBuilder에

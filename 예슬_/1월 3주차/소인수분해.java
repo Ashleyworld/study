@@ -10,6 +10,7 @@ class Solution {
                 if(!answer.contains(i))
                     answer.add(i);
                 n /= i;
+                // n/=i 는 최대한 떨어지는 수를 찾아보기 위해서
             }
         }
         return answer;
