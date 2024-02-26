@@ -11,7 +11,6 @@ class Solution {
                 for (int j = 0; j < spell.length; j++) {
                     if (!dic[i].contains(spell[j])) {
 
-
                         flag = false;
                         break;
                     }
