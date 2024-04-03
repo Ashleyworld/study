@@ -11,7 +11,7 @@ class Solution {
         // 2016년 a월 b일을 설정, Month는 0부터 시작하기 때문
 
         int dayNum = cal.get(Calendar.DAY_OF_WEEK);
-        // 설정된 날짜의 요일을 가져온다.
+        // 설정된 날짜의 요일을 가져온다. 숫자값으로 가져올 수 있다.
 
         switch(dayNum){
             case 1: day = "SUN";
