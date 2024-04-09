@@ -9,7 +9,8 @@ class Solution {
             mv -=1;
             for(int i=0; i<len; i++){
                 if(board[i][mv] != 0){     //인형집을 위치에 인형이 있는경우 board[mv][i]
-                    if(st.size() > 0  && st.peek() == board[i][mv] ){  //지금 뽑은 인형과 마지막 인형이 같다면
+                    if(st.size() > 0  && st.peek() == board[i][mv] ){
+                        //지금 뽑은 인형과 마지막 인형이 같다면
                         st.pop();
                         answer += 2;
                     }else{
